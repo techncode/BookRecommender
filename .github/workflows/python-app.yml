@@ -25,6 +25,9 @@ jobs:
         python-version: "3.10"
     - name: Install dependencies
       run: |
+        # change working directory
+        cd flask-app
+        # install requirements
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 #     - name: Lint with flake8
 #       run: |
